@@ -9,8 +9,7 @@ class Library:
 
     def borrowBook(self, bookName):
         if bookName in self.books:
-            print(
-                f"you have been issued {bookName}. Please keep it safe and return it within 30 days")
+            print(f"you have been issued {bookName}. Please keep it safe and return it within 30 days")
             self.books.remove(bookName)
             return True
         else:
